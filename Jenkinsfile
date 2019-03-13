@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Prepare') {
-      git url: 'git@github.com:firastahir/branching-githubflow-sample'
+      git url: 'git@github.com:firastahir/branching-githubflow-sample.git'
       mvnHome = tool 'maven'
    }
    stage('Build') {
